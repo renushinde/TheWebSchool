@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="logo.png" alt="TheWebSchool"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
                 <ul>
                     <li><a href="">Courses</a></li>
                     <li><a href="">Location</a></li>
                     <li><a href="">About TWS</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="header-text">
             <h1>The only coding school you will need</h1>
@@ -28,6 +32,16 @@
         <a href="" class="hero-btn">Visit Us To Learn More</a>
     </div>
     </section>
-    <script src="app.js"></script>
+    <script>
+        let navLinks = document.getElementById("navLinks");
+          function showMenu() {
+           navLinks.style.right = "0";   
+           }
+
+        function hideMenu() {
+          navLinks.style.right = "-200px";   
+          }
+    </script>
+    
 </body>
 </html>
