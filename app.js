@@ -4,6 +4,6 @@ function showMenu() {
     navLinks.style.right = "0";   
 }
 function hideMenu() {
-    navLinks.style.right = "-30px";   
+    navLinks.style.right = "-200px";   
 }
 //console.log("hello");

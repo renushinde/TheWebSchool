@@ -87,6 +87,7 @@ nav img {
     background:transparent;
     position: relative;
     cursor: pointer;
+    transition: 1s;
 }
 
 .hero-btn:hover{
@@ -128,4 +129,27 @@ nav .fa {
     .nav-links ul {
         padding: 30px;
     }
+}
+
+
+/* Courses */
+
+.course {
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+ 
+}
+
+p {
+    font-weight: 300;  
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
 }
